@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".asynctask.AsyncActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <FrameLayout
+            android:layout_gravity="center|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="sdf jds"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/text_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="ksjdfh jds"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/text_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="sdf jds"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+</LinearLayout>

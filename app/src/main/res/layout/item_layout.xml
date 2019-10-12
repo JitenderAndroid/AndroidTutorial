@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       app:layout_constraintStart_toStartOf="parent"
+       android:id="@+id/image_profile"
+       android:layout_width="50dp"
+       android:layout_height="50dp"/>
+
+   <TextView
+       android:id="@+id/text_title"
+       android:text="demo"
+       android:textSize="18sp"
+       android:textColor="@color/colorBlack"
+       android:gravity="start"
+       android:layout_marginStart="10dp"
+       android:layout_marginLeft="10dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@id/image_profile"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content" />
+
+   <TextView
+       android:id="@+id/text_subtitle"
+       android:text="subtitle"
+       android:textSize="14sp"
+       android:textColor="@color/colorBlack"
+       android:gravity="start"
+       android:layout_marginStart="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="7dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/text_title"
+       app:layout_constraintStart_toEndOf="@id/image_profile"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content" />
+   <View
+       android:visibility="gone"
+       app:layout_constraintTop_toBottomOf="@+id/text_title"
+       android:background="@color/colorBlack"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"/>
+</android.support.constraint.ConstraintLayout>
