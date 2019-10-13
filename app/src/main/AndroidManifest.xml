@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tab.TabActivity">
+        <activity android:name=".menus.NavigationDrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +20,15 @@
         </activity>
         <activity android:name=".activities.SecondActivity" />
 
-       <!-- //<activity android:name=".activities.LoginActivity"></activity> -->
-       <!-- <activity android:name=".activities.MainFrgamentActivity"></activity> -->
-       <!--         <activity android:name=".activities.recyclerviewdemo.MainRecyclerActivity"></activity> -->
-       <!--  <activity android:name=".asynctask.AsyncActivity"></activity>-->
-
+        <!-- //<activity android:name=".activities.LoginActivity"></activity> -->
+        <!-- <activity android:name=".activities.MainFrgamentActivity"></activity> -->
+        <!-- <activity android:name=".activities.recyclerviewdemo.MainRecyclerActivity"></activity> -->
+        <!-- <activity android:name=".asynctask.AsyncActivity"></activity> -->
+        <!--         <activity android:name=".events.EventActivity"></activity> -->
+       <!-- <activity
+            android:name=".menus.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme"></activity>-->
     </application>
+
 </manifest>
