@@ -39,7 +39,7 @@ public class FirstFragment extends Fragment {
         view.findViewById(R.id.button_go).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startFragment();
+                startFragment();
             }
         });
 
@@ -51,6 +51,14 @@ public class FirstFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    private void startFragment() {
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frame_main, new SecondFragment());
+        ft.addToBackStack(null);
+        // ft.disallowAddToBackStack();
+        ft.commit();
     }
 
     @Override

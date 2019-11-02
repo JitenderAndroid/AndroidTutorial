@@ -18,7 +18,7 @@ public class MainFrgamentActivity extends AppCompatActivity implements FirstFrag
         setContentView(R.layout.activity_main_frgament);
         Log.e("MainFrgamentActivity", "oncreate");
 
-        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+      /*  getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
                 int count = getSupportFragmentManager().getBackStackEntryCount();
@@ -29,7 +29,7 @@ public class MainFrgamentActivity extends AppCompatActivity implements FirstFrag
                    Log.e("backstack", ""+backStackEntry.getName());
                 }
             }
-        });
+        });*/
     }
 
     public void getMessage() {
@@ -37,7 +37,7 @@ public class MainFrgamentActivity extends AppCompatActivity implements FirstFrag
     }
 
     private void startFragment() {
-        SingletonClass.getInstance().getSpecialNumber();
+       // SingletonClass.getInstance().getSpecialNumber();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frame_main, new FirstFragment());
         ft.addToBackStack("firstfragment");

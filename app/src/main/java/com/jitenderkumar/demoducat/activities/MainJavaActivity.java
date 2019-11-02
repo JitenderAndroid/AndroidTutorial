@@ -54,7 +54,7 @@ public class MainJavaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
         //intent.putExtra(INTENT_NAME, "username");
-        //intent.putExtra(INTENT_STUDENT, getData());
+        //intent.putExtra(INTENT_STUDENT, `());
         startActivity(intent);
     }
 
@@ -64,6 +64,7 @@ public class MainJavaActivity extends AppCompatActivity {
         String roll = ((EditText)findViewById(R.id.edit_rollno)).getText().toString().trim();
 
         SharedPreferences.Editor editor = pref.edit();
+
         editor.putString("NAME", name);
         editor.putString("AGE", age);
         editor.putString("ROLLNO", roll);

@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menus.NavigationDrawerActivity">
+        <receiver
+            android:name=".broadcast.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.journaldev.AN_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.MainService"/>
+        <activity android:name=".services.MainServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,11 +33,19 @@
         <!-- <activity android:name=".activities.MainFrgamentActivity"></activity> -->
         <!-- <activity android:name=".activities.recyclerviewdemo.MainRecyclerActivity"></activity> -->
         <!-- <activity android:name=".asynctask.AsyncActivity"></activity> -->
-        <!--         <activity android:name=".events.EventActivity"></activity> -->
-       <!-- <activity
+        <!-- <activity android:name=".events.EventActivity"></activity> -->
+        <!--
+            <activity
             android:name=".menus.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme"></activity>-->
+            android:theme="@style/AppTheme"></activity>
+        -->
+        <!-- <activity android:name=".dialogs.DialogActivity"></activity> -->
+        <!-- <activity android:name=".webview.WebViewActvity"></activity> -->
+        <!-- <activity @android:name=".webview.SpinnerDemoActivity"></activity> -->
+        <!-- <activity android:name=".broadcast.MainBroadCastActivity"></activity> -->
+        <!-- <activity android:name=".broadcast.LocalBroadCastActvity"></activity> -->
+        <!--<activity android:name=".services.MainServiceActivity"></activity>-->
     </application>
 
 </manifest>
