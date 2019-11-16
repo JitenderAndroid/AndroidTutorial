@@ -1,11 +1,11 @@
 package com.jitenderkumar.demoducat.services;
 
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainService extends IntentService {
 
@@ -39,17 +39,20 @@ public class MainService extends IntentService {
 
     void doSomeWork() {
       for (int i = 0 ; i<5 ; i++) {
-          Log.e("called", "this"+i);
+          Log.e("called", "this" +i);
+
           try {
               Thread.sleep(1000);
           }catch (Exception e) {
           }
       }
 
-         Intent intent = new Intent();
-         intent.setAction(MainServiceActivity.INTENTACTION);
+        Toast.makeText(getApplicationContext(), " Main service called", Toast.LENGTH_LONG).show();
 
-         LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
+        Intent intent = new Intent();
+        intent.setAction(MainServiceActivity.INTENTACTION);
+
+        LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
     }
 
     @Override

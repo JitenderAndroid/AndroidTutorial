@@ -33,21 +33,22 @@ public class MainServiceActivity extends AppCompatActivity {
     }
 
     class Receiver extends BroadcastReceiver {
+
         @Override
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(MainServiceActivity.this, "called", Toast.LENGTH_LONG).show();
         }
     }
 
-    void unregisterREceiver() {
-        unregisterREceiver();
+    void unregisterReceiver() {
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        unregisterREceiver();
+        unregisterReceiver();
+
         Intent intent = new Intent(MainServiceActivity.this, MainService.class);
         stopService(intent);
     }
