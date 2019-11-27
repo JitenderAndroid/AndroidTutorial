@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.jitenderkumar.demoducat.R;
+import com.jitenderkumar.demoducat.models.PatientData;
 
 public class EditPatientActivity extends AppCompatActivity {
 

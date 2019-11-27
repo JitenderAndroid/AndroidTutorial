@@ -11,29 +11,17 @@ import android.widget.Button;
 import com.jitenderkumar.demoducat.R;
 import com.jitenderkumar.demoducat.models.Student;
 
-import butterknife.BindDrawable;
-import butterknife.BindString;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
 public class LoginActivity extends Activity {
-
-    @BindView(R.id.button_login)
-    Button buttonLogin;
-
-    @BindString(R.string.login)
-    String login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.e("login", "oncreate");
         setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
+        // ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.button_login)
+    //@OnClick(R.id.button_login)
     void onButtonCLicked() {
         Student student = new Student("rahul", "546", "kjhg", "g");
 

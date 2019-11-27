@@ -13,4 +13,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="patients_name">Patients name</string>
+    <string name="patients_age">Patients age</string>
+    <string name="patients_gender">Patients gender</string>
+    <string name="patients_city">Patients city</string>
+    <string name="patients_dob">Patients dob</string>
+    <string name="submit">SUBMIT</string>
+    <string name="edit">EDIT</string>
 </resources>

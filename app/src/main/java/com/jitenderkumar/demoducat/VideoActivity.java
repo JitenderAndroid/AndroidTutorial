@@ -10,7 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.jitenderkumar.gallerydemo.imagevideo.ImageVideoActivity;
+import com.jitenderkumar.demoducat.imagevideo.ImageVideoActivity;
 
 public class VideoActivity extends AppCompatActivity {
 

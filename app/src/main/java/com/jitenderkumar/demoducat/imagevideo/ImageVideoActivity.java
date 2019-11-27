@@ -24,10 +24,16 @@ import java.io.IOException;
 
 public class ImageVideoActivity extends AppCompatActivity {
 
-    int REQUEST_CAMERA = 101;
-    int REQUEST_GALLERY = 102;
-    ImageView imagePreview;
+    private int REQUEST_CAMERA = 101;
+    private int REQUEST_GALLERY = 102;
+    private ImageView imagePreview;
     public static Uri videoUri;
+
+    // 1. record audio and video
+    // 2. intent to record video
+    // 3. read and write image exif details
+    // 4. multimedia supported formats
+    // 5. control playback
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +42,8 @@ public class ImageVideoActivity extends AppCompatActivity {
 
         Button buttonPick = findViewById(R.id.btn_pick);
         Button buttonGo = findViewById(R.id.btn_go);
-
         imagePreview = findViewById(R.id.image_preview);
+
         buttonPick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +60,6 @@ public class ImageVideoActivity extends AppCompatActivity {
     }
 
     void onPickMedia() {
-
     }
 
     private void selectImage() {

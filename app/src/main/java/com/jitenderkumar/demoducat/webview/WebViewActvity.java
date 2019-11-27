@@ -16,7 +16,8 @@ public class WebViewActvity extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.web_view);
         webView.loadUrl("https:\\www.google.com");
-       // webView.setWebViewClient(new MyBrowser());
+
+     // webView.setWebViewClient(new MyBrowser());
         webView.getSettings().setJavaScriptEnabled(true);
     }
 

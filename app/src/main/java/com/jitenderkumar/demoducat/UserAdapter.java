@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.jitenderkumar.netmedssample.activities.EditPatientActivity;
-import com.jitenderkumar.netmedssample.models.PatientData;
+import com.jitenderkumar.demoducat.database.EditPatientActivity;
+import com.jitenderkumar.demoducat.models.PatientData;
 
 import java.util.ArrayList;
 
