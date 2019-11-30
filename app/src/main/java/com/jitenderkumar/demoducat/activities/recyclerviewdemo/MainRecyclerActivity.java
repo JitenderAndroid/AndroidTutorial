@@ -33,10 +33,10 @@ public class MainRecyclerActivity extends AppCompatActivity {
         arrayList.add(data);
         arrayList.add(data);
 
-        //RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(this, arrayList);
-        //recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
-        //recyclerView.setAdapter(recyclerViewAdapter);
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(this, arrayList);
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        recyclerView.setAdapter(recyclerViewAdapter);
 
-        //recyclerViewAdapter.notifyDataSetChanged();
+        recyclerViewAdapter.notifyDataSetChanged();
     }
 }

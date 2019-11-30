@@ -1,7 +1,6 @@
-package com.jitenderkumar.demoducat.activities.recyclerviewdemo;
+package com.jitenderkumar.demoducat.networking;
 
 import android.app.Activity;
-import android.graphics.Movie;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,12 +14,12 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class RecyclerVolleyAdapter extends RecyclerView.Adapter<RecyclerVolleyAdapter.MyViewHolder> {
 
-    private ArrayList<Data> moviesList;
+    private ArrayList<Hero> moviesList;
     private Activity activity;
 
-    public RecyclerViewAdapter(Activity activity, ArrayList<Data> moviesList) {
+    public RecyclerVolleyAdapter(Activity activity, ArrayList<Hero> moviesList) {
         this.moviesList = moviesList;
         this.activity = activity;
     }
@@ -33,11 +32,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.title.setText(moviesList.get(position).getTitle());
+        holder.title.setText(moviesList.get(position).getName());
 
-        if (moviesList.get(position).getImage() != null)
-        Picasso.with(activity).load(moviesList.get(position).getImage())
-                .error(R.drawable.ic_launcher_background).into(holder.imageView);
+        if (moviesList.get(position).getImageUrl() != null)
+            Picasso.with(activity).load(moviesList.get(position).getImageUrl())
+                    .error(R.drawable.ic_launcher_background).into(holder.imageView);
     }
 
     @Override
@@ -51,14 +50,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         public MyViewHolder(View view) {
             super(view);
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Data data = moviesList.get(getAdapterPosition());
-                    data.getTitle();
-                    Toast.makeText(activity, "clicked", Toast.LENGTH_LONG).show();
-                }
-            });
             title = (TextView) view.findViewById(R.id.text_title);
             imageView = (ImageView) view.findViewById(R.id.image_profile);
         }

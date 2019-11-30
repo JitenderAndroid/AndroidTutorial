@@ -22,8 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-        <!--<activity android:name=".materialDesign.MaterialDesignActivity"></activity>-->
-        <!--         <activity android:name=".animation.AnimateActivity"></activity> -->
+        <!--<activity android:name=".networking.JsonVolleyActivity"></activity>-->
+        <!-- <activity android:name=".materialDesign.MaterialDesignActivity"></activity> -->
+        <!-- <activity android:name=".animation.AnimateActivity"></activity> -->
         <!--
         <receiver
             android:name=".broadcast.MyReceiver"
@@ -38,7 +39,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".materialDesign.MaterialDesignActivity">
+        <activity android:name=".networking.JsonVolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
