@@ -16,6 +16,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jitenderkumar.demoducat.R;
@@ -33,12 +35,15 @@ public class JsonVolleyActivity extends AppCompatActivity {
     private String JSON_URL = "https://simplifiedcoding.net/demos/view-flipper/heroes.php";
 
     private ArrayList<Hero> heroList;
+    FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json_volley);
 
+        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        Crashlytics.getInstance().crash();
         loadHeroList();
     }
 
@@ -63,6 +68,7 @@ public class JsonVolleyActivity extends AppCompatActivity {
 
                             JSONArray heroArray = obj.getJSONArray("heroes");
 
+                            int b  = 50/0;
                             for (int i = 0; i < heroArray.length(); i++) {
                                 JSONObject heroObject = heroArray.getJSONObject(i);
                                 Hero hero = new Hero(heroObject.getString("name"), heroObject.getString("imageurl"));

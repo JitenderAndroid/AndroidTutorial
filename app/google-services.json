@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "486641067826",
+    "firebase_url": "https://demoducat-833e1.firebaseio.com",
+    "project_id": "demoducat-833e1",
+    "storage_bucket": "demoducat-833e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486641067826:android:22aad4f4e4b3f6cac2d92b",
+        "android_client_info": {
+          "package_name": "com.jitenderkumar.demoducat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486641067826-hkr02mesgs8t57pk45te1q0pq0kvks7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jitenderkumar.demoducat",
+            "certificate_hash": "c715606e29e46650a9857a91f84ae33f479379ac"
+          }
+        },
+        {
+          "client_id": "486641067826-mh2iph402dr9tpnj33mp8qcvpjr71vqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXlhycGFbCmVt4NVAUdMjdOhPzwAmGabc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486641067826-mh2iph402dr9tpnj33mp8qcvpjr71vqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
