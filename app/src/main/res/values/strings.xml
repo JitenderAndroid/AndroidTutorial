@@ -2,6 +2,10 @@
     <string name="app_name">DemoDucat</string>
     <string name="login">LOGIN</string>
 
+    <string name="facebook_app_id">813788225725660</string>
+    <string name="fb_login_protocol_scheme">fb813788225725660</string>
+    <array name="stringarray">
+    </array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Name</string>

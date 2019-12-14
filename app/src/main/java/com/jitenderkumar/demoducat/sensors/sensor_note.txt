@@ -1,0 +1,24 @@
+>>>> The android platform supports three broad categories of sensors.
+
+1. Motion Sensors
+2. Environmental sensors
+3. Position sensors
+
+getDefaultSensor(int type)
+This method get the default sensor for a given type.
+-------------------------
+getInclination(float[] I)
+This method computes the geomagnetic inclination angle in radians from the inclination matrix.
+--------------------------
+registerListener(SensorListener listener, int sensors, int rate)
+This method registers a listener for the sensor
+--------------------------
+unregisterListener(SensorEventListener listener, Sensor sensor)
+This method unregisters a listener for the sensors with which it is registered.
+--------------------------
+getOrientation(float[] R, float[] values)
+This method computes the device's orientation based on the rotation matrix.
+--------------------------
+getAltitude(float p0, float p)
+This method computes the Altitude in meters from the atmospheric pressure and the pressure at sea level.
+--------------------------

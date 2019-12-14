@@ -22,21 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    /*  packagingOptions {
-            merges -= ['/META-INF/services/**']
-            exclude 'META-INF/services/*'
-            exclude 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version'
-            exclude 'META-INF/androidx.customview_customview.version'
-            exclude 'META-INF/DEPENDENCIES'
-            exclude 'META-INF/LICENSE'
-            exclude 'META-INF/LICENSE.txt'
-            exclude 'META-INF/license.txt'
-            exclude 'META-INF/NOTICE'
-            exclude 'META-INF/NOTICE.txt'
-            exclude 'META-INF/notice.txt'
-            exclude 'META-INF/ASL2.0'
-        }*/
 }
 
 dependencies {
@@ -50,6 +35,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.4'
     implementation 'com.google.firebase:firebase-database:16.0.4'
     testImplementation 'junit:junit:4.12'
+    implementation 'com.facebook.android:facebook-login:[5,6)'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.volley:volley:1.1.0'
